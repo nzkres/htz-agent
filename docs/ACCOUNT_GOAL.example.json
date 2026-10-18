@@ -1,0 +1,39 @@
+{
+  "status": "draft_needs_user_definition",
+  "target": {
+    "purpose": null,
+    "level_or_stop_point": null,
+    "sect": null,
+    "skills_and_training": [],
+    "equipment": [],
+    "pets": [],
+    "content_to_complete": []
+  },
+  "limits": {
+    "monthly_cash_cny": null,
+    "manual_minutes_per_day": null,
+    "runtime_minutes_per_day": null,
+    "game_currency_limits": {},
+    "null_means": "undefined_not_unlimited"
+  },
+  "current_stage": "M0_M1_pending",
+  "recognizer": "offline_prototype_verified",
+  "runtime_environment": "not_verified",
+  "login_flow": "not_implemented",
+  "xiuye_once": "not_verified",
+  "evaluation": {
+    "period_days": 7,
+    "track": [
+      "real_completions_and_attempts",
+      "false_successes",
+      "wrong_actions",
+      "manual_interventions",
+      "cash_spend",
+      "game_resource_deltas",
+      "machine_minutes",
+      "model_usage",
+      "maintenance_minutes",
+      "account_target_gap"
+    ]
+  }
+}

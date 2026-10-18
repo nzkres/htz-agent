@@ -13,6 +13,8 @@
 
 | 文件 | 内容 |
 |---|---|
+| [长期目标与路线](docs/LONG_TERM_GOAL.md) | 成品标准、成本、V0/V1 验证及后续阶段 |
+| [玩法覆盖清单](docs/PLAYBOOKS.csv) | 六项日常及其他玩法的待核验范围 |
 | [微型识别器](docs/MICROVISION.md) | 可运行的图片 → JSON CLI、中文 OCR、模板识别与验证方法 |
 | [代码复用与缺口](docs/CODE_REVIEW.md) | 按模块和函数说明真实实现、缺陷、优先级及复用条件 |
 | [最小实现与验收](docs/MINIMUM_PLAN.md) | 登录、选人物、一次物资修业的状态、文件计划及验收证据 |

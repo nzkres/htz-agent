@@ -1,0 +1,12 @@
+id,playbook,coverage_status,automation_status,preferred_first_check,acceptance_scope
+P01,修业任务,NOT_VERIFIED,NOT_STARTED,核对官方自动功能及当前物资分支,任务要求实际交付及游戏计数变化
+P02,修炼任务,NOT_VERIFIED,NOT_STARTED,核对官方自动功能及复用物资流程,独立任务完成及修炼资源结果
+P03,宝图任务,NOT_VERIFIED,NOT_STARTED,核对当前入口分支与收益限制,完成反馈及奖励次数结果
+P04,巡游挑战,NOT_VERIFIED,NOT_STARTED,核对等级门客及官方战斗功能,实际结算及资源变化
+P05,降妖,NOT_VERIFIED,NOT_STARTED,核对自动组队和带队及任务条件,正确队伍任务战斗及结算
+P06,除魔任务,NOT_VERIFIED,NOT_STARTED,核对官方自动带队与当前限制,正确队伍任务完成次数及资源结果
+P07,副本,INVENTORY_PENDING,BACKLOG,按目标等级盘点可参与副本,每种副本及失败退出单独验收
+P08,周常和限时活动,INVENTORY_PENDING,BACKLOG,按当前日程时间窗口盘点,每种活动及开放条件单独验收
+P09,帮派社交和生活玩法,INVENTORY_PENDING,BACKLOG,按用户用途和当前功能盘点,明确辅助或人工参与方式
+P10,PVP及高难挑战,INVENTORY_PENDING,BACKLOG,先确认是否属于成品目标,队伍配合策略与人工介入单独定义
+P11,装备宠物及其他养成决策,INVENTORY_PENDING,BACKLOG,先定义目标和各币种消耗上限,属性目标实际改善且消耗可审计
