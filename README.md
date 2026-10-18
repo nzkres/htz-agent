@@ -2,17 +2,18 @@
 
 本仓库保留 [Lixiuxiu559/htz-agent](https://github.com/Lixiuxiu559/htz-agent) 的源码和历史，补充对 Windows 电脑版《幻唐志》的复用分析及实施清单。
 
-**当前交付是源码下载、静态分析和任务拆分；尚未实现或验收“登录 → 选人物 → 完成一次修业”。上游脚本不能直接当成可用成品运行。**
+**已完成源码审计和只读 `microvision` 图片识别原型；尚未实现或验收“登录 → 选人物 → 完成一次修业”。上游脚本不能直接当成可用成品运行。**
 
 - 审计日期：2026-10-19（Asia/Shanghai）。
 - 上游基线：`fdb352c6acb360d69641d64cc644080cc59b92fc`，提交于 2026-04-25 21:05:57 +08:00。
-- 本次没有安装上游依赖、导入上游模块、运行任务或操作游戏账号；没有修改上游 Python 代码。
+- 未导入或运行上游 `core/tasks`、未操作游戏账号、未修改上游 Python 代码。新增 `microvision` 独立安装必要的图像依赖并完成离线验证。
 - 已删除的 Windows 实验虚拟机不会因下载本项目而恢复。此前客户端拒绝虚拟环境的问题仍是执行环境的前置限制。
 
 ## 阅读入口
 
 | 文件 | 内容 |
 |---|---|
+| [微型识别器](docs/MICROVISION.md) | 可运行的图片 → JSON CLI、中文 OCR、模板识别与验证方法 |
 | [代码复用与缺口](docs/CODE_REVIEW.md) | 按模块和函数说明真实实现、缺陷、优先级及复用条件 |
 | [最小实现与验收](docs/MINIMUM_PLAN.md) | 登录、选人物、一次物资修业的状态、文件计划及验收证据 |
 | [任务列表](TASKS.csv) | 依赖、建议负责人、交付物和完成条件；可分配实施 |
@@ -32,3 +33,13 @@
 语法通过、窗口截图正常、点击已发送、本地计数增加，均不能证明修业已完成。只有完成“识别本次任务 → 实际执行 → 实际交付 → 游戏内完成确认”并留存脱敏证据，才能登记一次成功。
 
 运行日志、登录画面、账号信息和真实游戏截图应只保留在本机，不随本仓库发布。仓库内原有 `SPEC.md`、`SKILL.md`、`CLAUDE.md` 和 `agents.md` 是上游内容，其能力描述和路线图不代表本次验证结果。
+
+## 运行只读识别原型
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r microvision/requirements-ocr.txt
+.\.venv\Scripts\python.exe -m microvision.demo
+.\.venv\Scripts\python.exe -m microvision frame.png --ocr --output runs\observation.json
+```
+
+需要先创建 Python 虚拟环境；完整说明见 [MICROVISION.md](docs/MICROVISION.md)。原型不包含窗口采集和输入执行器，未校准场景保持 `unknown`。

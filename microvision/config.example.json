@@ -1,0 +1,12 @@
+{
+  "calibrated": false,
+  "expected_size": null,
+  "masks": [],
+  "ocr_min_score": 0.65,
+  "detect_shapes": true,
+  "templates": [],
+  "states": [
+    {"name": "login_page", "all_text": ["登录", "密码"]},
+    {"name": "environment_blocked", "all_text": ["虚拟设备", "断开"]}
+  ]
+}

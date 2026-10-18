@@ -2,7 +2,7 @@ id,priority,work_package,suggested_owner,depends_on,status,deliverable,acceptanc
 T00,P0,下载与静态审计,主代理,,DONE,README与docs审计和本任务表,固定上游SHA并区分静态检查与真实游戏验收
 T01,P0,确认环境并采集样本,环境与校准,T00,NOT_STARTED,可运行客户端及脱敏样本和校准元数据,客户端正常登录无环境拒绝且当前任务可读取
 T02,P0,统一窗口坐标与输入边界,桌面基础,T01;T04,NOT_STARTED,minimal/desktop.py,停止记录已接通且唯一HWND及错窗尺寸变化遮挡失焦时不输入
-T03,P0,实现页面与文字识别,识别,T01,NOT_STARTED,minimal/recognition.py和模板,已知状态唯一匹配且未知低分多候选不点
+T03,P0,实现页面与文字识别,识别,T01,PARTIAL,microvision离线原型已完成且游戏状态模板待校准,已知状态唯一匹配且未知低分多候选不点
 T04,P0,单次入口停止和证据,流程基础,T00,NOT_STARTED,minimal/run.py配置和本机结果,超时停止有效且凭据不入配置日志截图
 T05,P0,人工凭据登录接续,登录流程,T02;T03;T04,NOT_STARTED,login状态流程,等待用户输入后识别登录成功或明确停止
 T06,P0,选区选人物并入场,角色流程,T05,NOT_STARTED,select-role与enter-game,唯一匹配目标且选中和入场身份均有证据
