@@ -1,0 +1,918 @@
+{
+  "audit_date": "2026-10-19",
+  "timezone": "Asia/Shanghai",
+  "source_url": "https://github.com/Lixiuxiu559/htz-agent",
+  "source_commit": "fdb352c6acb360d69641d64cc644080cc59b92fc",
+  "source_commit_time": "2026-04-25T21:05:57+08:00",
+  "method": "Git inventory, SHA-256 and Python AST parsing; no source execution or imports",
+  "tracked_source_files": 27,
+  "python_files_parsed": 13,
+  "runtime_tests_performed": false,
+  "game_acceptance": {
+    "login": "NOT_TESTED",
+    "select_character": "NOT_TESTED",
+    "xiuye_once": "NOT_TESTED"
+  },
+  "missing_from_baseline": [
+    "README.md",
+    "main.py",
+    "config.yaml",
+    "LICENSE",
+    "assets/weights/htz.pt",
+    "tasks/xiuye.py",
+    "tasks/login.py",
+    "tasks/select_character.py"
+  ],
+  "assets": [
+    "assets/map_names/changan.png",
+    "assets/map_names/datangguojing.png",
+    "assets/map_names/qinghe.png"
+  ],
+  "files": [
+    {
+      "path": ".claude/settings.json",
+      "bytes": 78,
+      "sha256": "b6525664859552cca0d226ad74a3650833d2ccfd3edbfa81c2c2d5ae5bb95692"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 400,
+      "sha256": "1b0cd0d948601449c666eb681f6ee6ee53a73c311d70311a20fc78c3bc05c838"
+    },
+    {
+      "path": ".python-version",
+      "bytes": 5,
+      "sha256": "49a506dd32096b010d75205acf3430c9ae6c40351888129499e5a5e487126c93"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 2680,
+      "sha256": "8e368c3e17dd764d7f170f63e5d9d811f3439dd3fbfb8d083a91ad0ee0850339"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 2808,
+      "sha256": "c77dda6610686447620844833e284cbb89951fe5c5bf82b9bc88c65e84985fe4"
+    },
+    {
+      "path": "SPEC.md",
+      "bytes": 12860,
+      "sha256": "3cb8b1c119e8a36cec2a547298e3903434ec6838de0a4d273fc940a81418f770"
+    },
+    {
+      "path": "agents.md",
+      "bytes": 12518,
+      "sha256": "20fcc83c38bc8a5f6e49c496c7f1f0801d7f3a1ba79d284bc9bf5baa1c06c6c0"
+    },
+    {
+      "path": "assets/map_names/changan.png",
+      "bytes": 2240,
+      "sha256": "f3a51554705811dd4d1bee5ac1911be2ab97a5a4aeea2748c43c2689844c3059"
+    },
+    {
+      "path": "assets/map_names/datangguojing.png",
+      "bytes": 3652,
+      "sha256": "b00fdd84351f82a18e5b7ff55942d038432301bf3a41593d366055e6d8938aed"
+    },
+    {
+      "path": "assets/map_names/qinghe.png",
+      "bytes": 3101,
+      "sha256": "873bef7fa6b0c3ea8eaeb13b0ad1844459bc7b0e1d058eb59b1615d696a647e5"
+    },
+    {
+      "path": "config.yaml.example",
+      "bytes": 1016,
+      "sha256": "1b53797dde4cc12af588fa5f75b079d779e5b96a1f77c443102adf82fefbf760"
+    },
+    {
+      "path": "core/__init__.py",
+      "bytes": 566,
+      "sha256": "914e3c8f2b99cc9880a5636727455e6674ec0542197495d8efe1d1ec88341c74",
+      "lines": 14,
+      "ast_parse": "PASS",
+      "definitions": []
+    },
+    {
+      "path": "core/config.py",
+      "bytes": 2376,
+      "sha256": "0bc80deacfd056983dedb372ca1dc305eebdb7d2dfdccfbd2c2cc06cd5df8b29",
+      "lines": 84,
+      "ast_parse": "PASS",
+      "definitions": [
+        {
+          "kind": "ClassDef",
+          "name": "Config",
+          "line": 9
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__new__",
+          "line": 15
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 20
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "load",
+          "line": 24
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_replace_env_vars",
+          "line": 36
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get",
+          "line": 53
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "game",
+          "line": 65
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "api",
+          "line": 69
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "delay",
+          "line": 73
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "resolution",
+          "line": 77
+        }
+      ]
+    },
+    {
+      "path": "core/decision.py",
+      "bytes": 5967,
+      "sha256": "9cdb6d3b269517e2a720c5344c9709e49937c4e82b7038d76960d782f436e601",
+      "lines": 172,
+      "ast_parse": "PASS",
+      "definitions": [
+        {
+          "kind": "ClassDef",
+          "name": "DecisionMaker",
+          "line": 13
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 16
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "decide",
+          "line": 32
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_system_prompt",
+          "line": 61
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_build_prompt",
+          "line": 89
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "decide_battle",
+          "line": 101
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_build_battle_prompt",
+          "line": 106
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_decide",
+          "line": 138
+        }
+      ]
+    },
+    {
+      "path": "core/executor.py",
+      "bytes": 7654,
+      "sha256": "6407cb2cbced3e548656e2b76d0857802d3b59afdcf0b76be79e2cf4ed8b3602",
+      "lines": 225,
+      "ast_parse": "PASS",
+      "definitions": [
+        {
+          "kind": "ClassDef",
+          "name": "Executor",
+          "line": 14
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 17
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_find_window",
+          "line": 24
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_random_delay",
+          "line": 51
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_get_client_coord",
+          "line": 60
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "click",
+          "line": 69
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "double_click",
+          "line": 84
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "right_click",
+          "line": 90
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "drag",
+          "line": 94
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "key_press",
+          "line": 119
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "key_down",
+          "line": 126
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "key_up",
+          "line": 129
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "type_text",
+          "line": 132
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "press_esc",
+          "line": 151
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "press_enter",
+          "line": 155
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "press_f9",
+          "line": 159
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "activate_window",
+          "line": 165
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_window_rect",
+          "line": 171
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "click_button",
+          "line": 179
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "move_to_and_click",
+          "line": 187
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "enum_handler",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "path": "core/game_state.py",
+      "bytes": 4983,
+      "sha256": "de5a5e92ad5d7b927633f7ba49606ea24024bad274625b5dd7e4d3bbc5d81e85",
+      "lines": 180,
+      "ast_parse": "PASS",
+      "definitions": [
+        {
+          "kind": "ClassDef",
+          "name": "Sect",
+          "line": 9
+        },
+        {
+          "kind": "ClassDef",
+          "name": "MapType",
+          "line": 22
+        },
+        {
+          "kind": "ClassDef",
+          "name": "RoleInfo",
+          "line": 32
+        },
+        {
+          "kind": "ClassDef",
+          "name": "BattleUnit",
+          "line": 46
+        },
+        {
+          "kind": "ClassDef",
+          "name": "BattleState",
+          "line": 56
+        },
+        {
+          "kind": "ClassDef",
+          "name": "TaskProgress",
+          "line": 66
+        },
+        {
+          "kind": "ClassDef",
+          "name": "GameState",
+          "line": 75
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__new__",
+          "line": 84
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_init",
+          "line": 90
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "reset",
+          "line": 99
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "update_role",
+          "line": 103
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "update_battle",
+          "line": 109
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "update_task",
+          "line": 125
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "update_map",
+          "line": 139
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "to_dict",
+          "line": 146
+        }
+      ]
+    },
+    {
+      "path": "core/maps.py",
+      "bytes": 4958,
+      "sha256": "f057c83e163d91d57b163ec49aeff673bdb202c646d370de6799678bb78aac8c",
+      "lines": 180,
+      "ast_parse": "PASS",
+      "definitions": [
+        {
+          "kind": "ClassDef",
+          "name": "MapLocation",
+          "line": 10
+        },
+        {
+          "kind": "ClassDef",
+          "name": "MapData",
+          "line": 19
+        },
+        {
+          "kind": "ClassDef",
+          "name": "MapDatabase",
+          "line": 113
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__post_init__",
+          "line": 30
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 116
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_map",
+          "line": 119
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_npc_position",
+          "line": 123
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "find_npc_in_map",
+          "line": 140
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "add_map",
+          "line": 156
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "add_npc",
+          "line": 160
+        }
+      ]
+    },
+    {
+      "path": "core/navigator.py",
+      "bytes": 5506,
+      "sha256": "6c9d0be798c6a833fd10e4ae010cdf3d48d0fc92e23a4fe604cd7a27380d3cf9",
+      "lines": 202,
+      "ast_parse": "PASS",
+      "definitions": [
+        {
+          "kind": "ClassDef",
+          "name": "Navigator",
+          "line": 14
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 24
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "get_current_map",
+          "line": 31
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "navigate_to",
+          "line": 47
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_wait_for_arrival",
+          "line": 98
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "click_on_minimap",
+          "line": 135
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "navigate_to_coordinates",
+          "line": 162
+        }
+      ]
+    },
+    {
+      "path": "core/ocr.py",
+      "bytes": 9914,
+      "sha256": "6ab560d44e4a63a652c12adad985c9ba7dfdef53a918b9362c5b1d01b017e278",
+      "lines": 324,
+      "ast_parse": "PASS",
+      "definitions": [
+        {
+          "kind": "ClassDef",
+          "name": "OCRReader",
+          "line": 13
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 19
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_ensure_init",
+          "line": 34
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_ensure_init",
+          "line": 45
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "read_text",
+          "line": 56
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "read_map_name",
+          "line": 92
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_match_map_template",
+          "line": 132
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_load_map_templates",
+          "line": 180
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "register_map_template",
+          "line": 215
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "save_map_template",
+          "line": 233
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "find_text_position",
+          "line": 261
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "read_button_text",
+          "line": 299
+        }
+      ]
+    },
+    {
+      "path": "core/screenshot.py",
+      "bytes": 5030,
+      "sha256": "198f78147756c91347a5205e06b04ca02a50afea34b1eb0900b987b8a1150d7a",
+      "lines": 162,
+      "ast_parse": "PASS",
+      "definitions": [
+        {
+          "kind": "ClassDef",
+          "name": "ScreenCapture",
+          "line": 13
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 16
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "adb_screenshot",
+          "line": 25
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "adb_push",
+          "line": 38
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "adb_pull",
+          "line": 46
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_find_window_by_prefix",
+          "line": 59
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_get_hwnd",
+          "line": 73
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "win_screenshot",
+          "line": 100
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "capture",
+          "line": 129
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "save",
+          "line": 138
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "activate_window",
+          "line": 145
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "enum_handler",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "path": "core/vision.py",
+      "bytes": 13746,
+      "sha256": "6b9a715547e608a8393749494668eb7db1270da91b363291e4c709eb1325d4aa",
+      "lines": 432,
+      "ast_parse": "PASS",
+      "definitions": [
+        {
+          "kind": "ClassDef",
+          "name": "SceneType",
+          "line": 15
+        },
+        {
+          "kind": "ClassDef",
+          "name": "BBox",
+          "line": 31
+        },
+        {
+          "kind": "ClassDef",
+          "name": "BattleInfo",
+          "line": 69
+        },
+        {
+          "kind": "ClassDef",
+          "name": "VisionResult",
+          "line": 82
+        },
+        {
+          "kind": "ClassDef",
+          "name": "YOLOv8Detector",
+          "line": 91
+        },
+        {
+          "kind": "ClassDef",
+          "name": "Vision",
+          "line": 180
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "center",
+          "line": 41
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "width",
+          "line": 45
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "height",
+          "line": 49
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "to_absolute",
+          "line": 52
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "to_xy_absolute",
+          "line": 61
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 101
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_ensure_loaded",
+          "line": 114
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "detect",
+          "line": 138
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 229
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "detect",
+          "line": 257
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "classify_scene",
+          "line": 273
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_extract_battle_info",
+          "line": 336
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_fallback_classify",
+          "line": 358
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "find_by_class",
+          "line": 394
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "find_one",
+          "line": 398
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "screen_to_absolute",
+          "line": 403
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "find_button",
+          "line": 407
+        }
+      ]
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 401,
+      "sha256": "7941530569b8d07e2dda4e84345f9e949848b1fbeb0c11da5f270c9c68d0e176"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 303,
+      "sha256": "c9f6bf542741c092620686da29a6a9deca8f34303b72b0e390613ba2c64ffbc8"
+    },
+    {
+      "path": "tasks/__init__.py",
+      "bytes": 168,
+      "sha256": "a90db53d406b021c7be013035af0b6fbe2a14ff2bb9ffe84838ed176292a9ae5",
+      "lines": 7,
+      "ast_parse": "PASS",
+      "definitions": []
+    },
+    {
+      "path": "tasks/base.py",
+      "bytes": 3790,
+      "sha256": "c56c2de8bc0dffede055c6644409f66c29c1a86a4d16e9bd6d9689515d90da98",
+      "lines": 135,
+      "ast_parse": "PASS",
+      "definitions": [
+        {
+          "kind": "ClassDef",
+          "name": "TaskStatus",
+          "line": 20
+        },
+        {
+          "kind": "ClassDef",
+          "name": "TaskResult",
+          "line": 28
+        },
+        {
+          "kind": "ClassDef",
+          "name": "BaseTask",
+          "line": 35
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 46
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "run",
+          "line": 61
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "step",
+          "line": 106
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "check_complete",
+          "line": 113
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "wait_for_scene",
+          "line": 117
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "click_center",
+          "line": 128
+        }
+      ]
+    },
+    {
+      "path": "tasks/shimen.py",
+      "bytes": 11014,
+      "sha256": "ffe4d8b3bdaf4ccc7fd9dd096157acfae25d7e3a146a4e6e1d602655c9228ded",
+      "lines": 347,
+      "ast_parse": "PASS",
+      "definitions": [
+        {
+          "kind": "ClassDef",
+          "name": "ShiMenTask",
+          "line": 26
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "__init__",
+          "line": 48
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "run",
+          "line": 54
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "step",
+          "line": 94
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_go_to_master",
+          "line": 98
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_accept_task",
+          "line": 139
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_execute_task",
+          "line": 171
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_execute_battle",
+          "line": 195
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_execute_deliver",
+          "line": 231
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_execute_capture",
+          "line": 240
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_execute_scout",
+          "line": 246
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_execute_action",
+          "line": 252
+        },
+        {
+          "kind": "FunctionDef",
+          "name": "_return_and_submit",
+          "line": 301
+        }
+      ]
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 431353,
+      "sha256": "c3b8ee8d373abf0006aabb15b05a72c321fe3367023d424cafaffcc1b9fa456d"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+id,priority,work_package,suggested_owner,depends_on,status,deliverable,acceptance
+T00,P0,下载与静态审计,主代理,,DONE,README与docs审计和本任务表,固定上游SHA并区分静态检查与真实游戏验收
+T01,P0,确认环境并采集样本,环境与校准,T00,NOT_STARTED,可运行客户端及脱敏样本和校准元数据,客户端正常登录无环境拒绝且当前任务可读取
+T02,P0,统一窗口坐标与输入边界,桌面基础,T01;T04,NOT_STARTED,minimal/desktop.py,停止记录已接通且唯一HWND及错窗尺寸变化遮挡失焦时不输入
+T03,P0,实现页面与文字识别,识别,T01,NOT_STARTED,minimal/recognition.py和模板,已知状态唯一匹配且未知低分多候选不点
+T04,P0,单次入口停止和证据,流程基础,T00,NOT_STARTED,minimal/run.py配置和本机结果,超时停止有效且凭据不入配置日志截图
+T05,P0,人工凭据登录接续,登录流程,T02;T03;T04,NOT_STARTED,login状态流程,等待用户输入后识别登录成功或明确停止
+T06,P0,选区选人物并入场,角色流程,T05,NOT_STARTED,select-role与enter-game,唯一匹配目标且选中和入场身份均有证据
+T07,P0,读取或接取一次修业,任务流程,T06,NOT_STARTED,任务标识与本轮要求和基线计数,已接不重接且物品数量来自当前画面
+T08,P0,核对背包物资,任务流程,T07,NOT_STARTED,物品匹配及数量判断,足量才继续缺物明确停止且不自动采购
+T09,P0,任务追踪和单次交付,任务流程,T08,NOT_STARTED,经校准的导航及提交步骤,NPC任务物品数量一致且只提交一次
+T10,P0,游戏完成确认与防重复计数,验收逻辑,T09,NOT_STARTED,VERIFY_COMPLETION与result.json,游戏计数N到N加1和完成反馈成立后才计为1
+T11,P0,逐步和整链真实验收,独立验证,T10,NOT_STARTED,脱敏验收证据及未通过项,登录选人物一次修业真实通过且错误状态会停止
