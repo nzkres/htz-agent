@@ -10,11 +10,17 @@
     "content_to_complete": []
   },
   "limits": {
-    "monthly_cash_cny": null,
+    "monthly_cash_cny": 0,
     "manual_minutes_per_day": null,
     "runtime_minutes_per_day": null,
     "game_currency_limits": {},
-    "null_means": "undefined_not_unlimited"
+    "null_means": "undefined_not_unlimited",
+    "cash_budget_status": "confirmed_zero_additional_cash",
+    "cash_budget_confirmed_date": "2026-10-19",
+    "allow_new_paid_model_api": false,
+    "allow_new_hosting_or_hardware_purchase": false,
+    "allow_game_topup_or_new_paid_convenience": false,
+    "allow_trial_with_auto_renewal": false
   },
   "current_stage": "M0_M1_pending",
   "recognizer": "offline_prototype_verified",
@@ -35,5 +41,10 @@
       "maintenance_minutes",
       "account_target_gap"
     ]
+  },
+  "runtime_constraints": {
+    "development_on_existing_machine": "allowed",
+    "game_runtime_on_users_own_devices": "not_assumed_authorized_by_zero_budget",
+    "remote_environment": "must_be_free_authorized_and_game_verified"
   }
 }
