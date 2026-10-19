@@ -14,6 +14,7 @@
 | 文件 | 内容 |
 |---|---|
 | [长期目标与路线](docs/LONG_TERM_GOAL.md) | 成品标准、成本、V0/V1 验证及后续阶段 |
+| [三种小电脑路线](docs/HARDWARE_ROUTES.md) | N100/N150、M920x RX560 和小机箱组装的步骤、试机门槛与共同验收 |
 | [玩法覆盖清单](docs/PLAYBOOKS.csv) | 六项日常及其他玩法的待核验范围 |
 | [微型识别器](docs/MICROVISION.md) | 可运行的图片 → JSON CLI、中文 OCR、模板识别与验证方法 |
 | [代码复用与缺口](docs/CODE_REVIEW.md) | 按模块和函数说明真实实现、缺陷、优先级及复用条件 |
